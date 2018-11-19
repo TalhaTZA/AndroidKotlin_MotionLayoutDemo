@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         mBinding.apply {
             btnMotion1.setOnClickListener(this@MainActivity)
             btnMotion2.setOnClickListener(this@MainActivity)
+            btnMotion3.setOnClickListener(this@MainActivity)
         }
 
 
@@ -32,13 +33,21 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
             null ->{}
 
             R.id.btn_motion_1 ->{
-                startActivity(Intent(this@MainActivity,MotionBasic1Activity::class.java))
+                openActivity(MotionBasic1Activity::class.java)
             }
 
             R.id.btn_motion_2 ->{
-                startActivity(Intent(this@MainActivity,MotionBasic2Activity::class.java))
+                openActivity(MotionBasic2Activity::class.java)
+            }
+
+            R.id.btn_motion_3 ->{
+                openActivity(MotionBasic3Activity::class.java)
             }
 
         }
+    }
+
+    fun openActivity(activityName : Class<*> ){
+        startActivity(Intent(this@MainActivity,activityName))
     }
 }
