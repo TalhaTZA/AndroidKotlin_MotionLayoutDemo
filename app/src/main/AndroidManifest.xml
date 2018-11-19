@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".MotionBasic1Activity">
         </activity>
+        <activity android:name=".MotionBasic2Activity">
+        </activity>
     </application>
 
 </manifest>
