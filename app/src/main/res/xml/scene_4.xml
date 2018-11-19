@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+        xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            motion:constraintSetStart="@layout/test_out"
+            motion:constraintSetEnd="@layout/test_in"
+            motion:interpolator="linear"
+            motion:duration="1000">
+    </Transition>
+
+</MotionScene>

@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
             btnMotion1.setOnClickListener(this@MainActivity)
             btnMotion2.setOnClickListener(this@MainActivity)
             btnMotion3.setOnClickListener(this@MainActivity)
+            btnMotion4.setOnClickListener(this@MainActivity)
         }
 
 
@@ -42,6 +43,9 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
 
             R.id.btn_motion_3 ->{
                 openActivity(MotionBasic3Activity::class.java)
+            }
+            R.id.btn_motion_4 ->{
+                openActivity(MotionBasic4Activity::class.java)
             }
 
         }
